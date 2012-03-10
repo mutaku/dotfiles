@@ -176,7 +176,7 @@ set pumheight=6             " Keep a small completion window
 endif
 
 """ Moving Around/Editing
-set cursorline              " have a line indicate the cursor location
+" set cursorline              " have a line indicate the cursor location
 set ruler                   " show the cursor position all the time
 set nostartofline           " Avoid moving cursor to BOL when jumping around
 set virtualedit=block       " Let cursor move past the last char in <C-v> mode
