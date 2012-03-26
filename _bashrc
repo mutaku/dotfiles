@@ -143,7 +143,7 @@ function git_branch {
   git branch --color=never 2>/dev/null | awk '{if($1 == "*") {printf "(%s) ", $2}}'
 }
 
-export PROMPT_COMMAND=git_branch
+#export PROMPT_COMMAND=git_branch
 
 # Dynamically add the git branch to the terminal output
 #function parse_git_branch {
@@ -160,8 +160,8 @@ function proml {
     ;;
   esac
 
-#PS1="${TITLEBAR} \[\033[0;36m\]\$(parse_git_branch)\[\033[00m\] $ "
-PS1="${TITLEBAR} \[\033[0;36m\]\[\033[00m\]$ "
+PS1="${TITLEBAR} \[\033[0;36m\]\$(git_branch)\[\033[00m\] $ "
+#PS1="${TITLEBAR} \[\033[0;36m\]\[\033[00m\]$ "
 }
 proml
 
