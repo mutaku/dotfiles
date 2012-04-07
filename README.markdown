@@ -27,6 +27,9 @@ It's as simple as running:
 
     ./install.sh
 
+On windows may need to do the following:
+ copy mingw/bin/libiconv-2.dll -> libexec/git-core/
+
 From this top-level directory.
 
 ## Requirements
