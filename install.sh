@@ -29,7 +29,7 @@ git submodule foreach git pull origin master
 git submodule foreach git submodule init
 git submodule foreach git submodule update
 
-if which -s rake; then
+if which rake; then
     # setup command-t
     cd _vim/bundle/command-t
     rake make
