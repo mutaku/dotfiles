@@ -23,7 +23,8 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-alias ls='ls -G -F'
+# This should be in bash_aliases or at least called before we source that file
+#alias ls='ls -G -F'
 EDITOR='vim'
 
 # Colorize the Terminal
